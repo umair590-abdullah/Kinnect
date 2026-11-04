@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <!-- Header Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp">
+
+        <TextView
+            android:id="@+id/btnBack"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="‹"
+            android:textColor="#333333"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tvHeaderName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="User Profile"
+            android:textColor="#222222"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/btnSearch"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="⌕"
+            android:textColor="#333333"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/scrollContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Cover Photo Banner -->
+            <LinearLayout
+                android:id="@+id/cover"
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:background="#303D50"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/coverDot"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#303D50"
+                    android:gravity="center"
+                    android:text="●"
+                    android:textColor="#F0C978"
+                    android:textSize="50sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingStart="7dp"
+                android:paddingEnd="7dp">
+
+                <!-- Avatar Circle -->
+                <TextView
+                    android:id="@+id/avatar"
+                    android:layout_width="105dp"
+                    android:layout_height="105dp"
+                    android:layout_marginTop="0dp"
+                    android:background="#287A5C"
+                    android:gravity="center"
+                    android:text="U"
+                    android:textColor="#FFFFFF"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+                <!-- Name -->
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="User Name"
+                    android:textColor="#222222"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <!-- Friend and Mutual Count -->
+                <TextView
+                    android:id="@+id/tvCounts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="0 friends · 0 mutual"
+                    android:textColor="#444444"
+                    android:textSize="12sp" />
+
+                <!-- Bio -->
+                <TextView
+                    android:id="@+id/tvBio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Bio"
+                    android:textColor="#444444"
+                    android:textSize="12sp" />
+
+                <!-- Action Buttons Row -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/btnAddFriend"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight="1"
+                        android:background="#08716D"
+                        android:gravity="center"
+                        android:text="♙  Add friend"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/btnMessage"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight="1"
+                        android:background="#EEEEEA"
+                        android:gravity="center"
+                        android:text="☏  Message"
+                        android:textColor="#333333"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/btnMore"
+                        android:layout_width="42dp"
+                        android:layout_height="35dp"
+                        android:background="#EEEEEA"
+                        android:gravity="center"
+                        android:text="•••"
+                        android:textColor="#333333"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <!-- Mutual Friends Section -->
+                <LinearLayout
+                    android:id="@+id/rowMutual"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/mut1"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:background="#A45A67"
+                        android:gravity="center"
+                        android:text="AK"
+                        android:textColor="#FFFFFF"
+                        android:textSize="9sp" />
+
+                    <TextView
+                        android:id="@+id/mut2"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="7dp"
+                        android:background="#6E7AA5"
+                        android:gravity="center"
+                        android:text="LM"
+                        android:textColor="#FFFFFF"
+                        android:textSize="9sp" />
+
+                    <TextView
+                        android:id="@+id/mut3"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="7dp"
+                        android:background="#397C70"
+                        android:gravity="center"
+                        android:text="ZR"
+                        android:textColor="#FFFFFF"
+                        android:textSize="9sp" />
+
+                    <TextView
+                        android:id="@+id/tvMutual"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:text="Mutual friends"
+                        android:textColor="#444444"
+                        android:textSize="11sp" />
+
+                </LinearLayout>
+
+                <!-- Bio Details Section -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/tvWork"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:text="▣   Member on Kinnect"
+                        android:textColor="#333333"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tvLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:text="⌖   Lives in Pakistan"
+                        android:textColor="#333333"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

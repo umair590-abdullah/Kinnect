@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1006112008529",
+    "firebase_url": "https://kinnect-sociali-default-rtdb.firebaseio.com",
+    "project_id": "kinnect-sociali",
+    "storage_bucket": "kinnect-sociali.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1006112008529:android:1373656f1cb8441911cb70",
+        "android_client_info": {
+          "package_name": "com.example.kinnect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1006112008529-l1o76ht4csjtmi0afe3q8u1n26r35ele.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOPX1pEukhL7uQaScsurczDLpCLM6SBwc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1006112008529-l1o76ht4csjtmi0afe3q8u1n26r35ele.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
